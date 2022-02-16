@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                     Log.i("DeleteAlarm", "onSwiped: success deleted alarm with $deletedItem")
                 }
 
-                deletedItem?.type?.let { alarmService?.cancelAalarm(applicationContext, it) }
+                deletedItem?.type?.let { alarmService?.cancelAlarm(applicationContext, it) }
             }
         }).attachToRecyclerView(recyclerView)
     }

@@ -109,7 +109,7 @@ class AlarmReceiver : BroadcastReceiver(){
         Toast.makeText(context, "Success Set Up Repeating Alarm", Toast.LENGTH_SHORT).show()
     }
 
-    fun cancelAalarm(context: Context, type: Int){
+    fun cancelAlarm(context: Context, type: Int){
         // alarm manger
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(context, AlarmReceiver::class.java)
